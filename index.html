@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="./style.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="app.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="cart-icon-box">
+            <i class="bi bi-cart4 cart-icon"></i>
+            <span class="cart-icon-item">0</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--  sidebar -->
+    <div class="sidebar">
+
+      <div class="sidebar-title px-5 py-2">
+        <i class="bi bi-x-octagon close-btn"></i>
+        <h4 class="text-center pt-1">Shopping Cart</h4>
+      </div>
+
+      <!--  cart-items -->
+      <div class="cart-content">
+
+
+
+      </div>
+
+      <!-- cart total -->
+      <div class="cart-total-box">
+        <h6 class="text-center">Total: <span class="cart-total">0</span></h6>
+        <button type="button" class="btn btn-danger btn-sm clear-cart vstack mx-auto">CLEAR CART</button>
+      </div>
+    </div>
+
+
+
+   
+
+    <section>
+      <!-- side -->
+      <aside class="px-5 ms-5">
+
+        <input type="text" class="input" placeholder="search...">
+        <h5 class="mt-4">Products</h5>
+        <div class="category">
+          <p class="all">All</p>
+          <p class="rings">Rings</p>
+          <p class="neckaces">Necklaces</p>
+          <p class="earrings">Earrings</p>
+        </div>
+
+        <h5>Metals</h5>
+        <div class="metals">
+          <p class="gold">Gold</p>
+          <p class="silver">Silver</p>
+        </div>
+
+
+        <div class="range-box mt-4">
+          <h4>Price</h4>
+          <input type="range" class="form-range" id="customRange1">
+          <div class="value"><span class="range-value"></span></div>
+        </div>
+
+
+      </aside>
+
+      <!-- products -->
+      <div class="productBox">
+       
+        <div class="products">
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

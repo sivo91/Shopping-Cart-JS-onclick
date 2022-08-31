@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Saphira",
+    "imgs" : "./imgs/goldR.jpg",
+    "metal": "gold",
+    "category": "Rings",
+    "price":2499,
+    "instock": 20,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 2,
+    "name": "Melo",
+    "imgs" : "./imgs/goldR1.png",
+    "metal": "gold",
+    "category": "Rings",
+    "price":4899,
+    "instock": 5,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 3,
+    "name": "Angara",
+    "imgs" : "./imgs/goldR2.png",
+    "metal": "gold",
+    "category": "Rings",
+    "price":5000,
+    "instock": 9,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 4,
+    "name": "Melo",
+    "imgs" : "./imgs/goldR3.jpg",
+    "metal": "gold",
+    "category": "Rings",
+    "price":2000,
+    "instock": 2,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 5,
+    "name": "Melo",
+    "imgs" : "./imgs/goldR4.webp",
+    "metal": "gold",
+    "category": "Rings",
+    "price":4000,
+    "instock": 5,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 6,
+    "name": "Saphira",
+    "imgs" : "./imgs/earrings.jpg",
+    "metal": "silver",
+    "category": "Earrings",
+    "price":8900,
+    "instock": 10,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 7,
+    "name": "Rusy",
+    "imgs" : "./imgs/earrings1.jpg",
+    "metal": "silver",
+    "category": "Earrings",
+    "price":7500,
+    "instock": 3,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 8,
+    "name": "Saphira",
+    "imgs" : "./imgs/earrings2.jpg",
+    "metal": "gold",
+    "category": "Earrings",
+    "price":6699,
+    "instock": 20,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 9,
+    "name": "Rusy",
+    "imgs" : "./imgs/necklace.jpg",
+    "metal": "gold",
+    "category": "Necklaces",
+    "price":9000,
+    "instock": 8,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 10,
+    "name": "Saphira",
+    "imgs" : "./imgs/necklace1.jpg",
+    "metal": "gold",
+    "category": "Necklaces",
+    "price":4499,
+    "instock": 2,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 11,
+    "name": "Tara",
+    "imgs" : "./imgs/necklace2.jpg",
+    "metal": "gold",
+    "category": "Necklaces",
+    "price":2299,
+    "instock": 20,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 12,
+    "name": "Saphira",
+    "imgs" : "./imgs/necklace4.jpg",
+    "metal": "gold",
+    "category": "Necklaces",
+    "price":6999,
+    "instock": 10,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 13,
+    "name": "Tara",
+    "imgs" : "./imgs/silverR.jpg",
+    "metal": "silver",
+    "category": "Rings",
+    "price":7399,
+    "instock": 7,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 14,
+    "name": "Saphira",
+    "imgs" : "./imgs/silverR1.jpg",
+    "metal": "silver",
+    "category": "Rings",
+    "price":3559,
+    "instock": 6,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 15,
+    "name": "Tara",
+    "imgs" : "./imgs/silverR2.jpeg",
+    "metal": "silver",
+    "category": "Rings",
+    "price":4000,
+    "instock": 2,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 16,
+    "name": "Saphira",
+    "imgs" : "./imgs/silverR4.jpg",
+    "metal": "gold",
+    "category": "Rings",
+    "price":7000,
+    "instock": 4,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  },
+  {
+    "id": 17,
+    "name": "Tara",
+    "imgs" : "./imgs/silverR5.jpg",
+    "metal": "silver",
+    "category": "Rings",
+    "price":5000,
+    "instock": 5,
+    "description": "lorem ipsum dolor sit amet, consectetur adispisicin elit."
+  }
+]

@@ -1,0 +1,248 @@
+
+
+
+
+.cart-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.cart-icon-box {
+  position: relative;
+
+}
+
+.cart-icon-item {
+  position: relative;
+  background-color: rgb(255, 180, 180);
+  top: -14px;
+  left: -15px;
+  padding: 5px 10px;
+  border-radius: 50%;
+
+}
+
+section {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  margin-bottom: 600px;
+
+}
+
+aside {
+  position: fixed;
+  margin-top: 60px;
+  width: 20%;
+}
+
+.product-title{
+    position: relative;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.products {
+  position: relative;
+  height: 100vh;
+  width: 80%;
+  margin-left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 8px;
+  gap: 15px;
+}
+
+.card {
+  position: relative;
+  width: 14rem;
+  height: 19rem;
+  border: none;
+  margin: 10px 5px;
+}
+
+.card:hover>.img-product {
+  opacity: 0.3;
+}
+
+.img-product:hover .icons {
+  opacity: 1;
+}
+
+.card:hover .icons {
+  display: block;
+}
+
+
+.icons {
+  position: absolute;
+  left: 50px;
+  top: 160px;
+  display: none;
+}
+
+
+
+
+.icon-product {
+  position: relative;
+  margin: 10px;
+  background-color: brown;
+  padding: 10px 12px;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+aside>p {
+  cursor: pointer;
+}
+
+.input {
+  position: relative;
+  background-color: rgb(243, 243, 246);
+  border: none;
+  padding: 5px 15px;
+}
+
+
+
+/* sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #dcddde;
+  right: 0;
+  overflow: hidden;
+  z-index: 10;
+  /* display: none; */
+  transition: all .5s ease-out;
+   transform: translateX(100%); 
+  
+}
+
+.showCart {
+  transform: translateX(0);
+}
+
+.cart-item {
+  position: relative;
+  width: 100%;
+  height: 93px;
+  margin: 10px 0;
+  display: flex;
+  background-color: #dcddde;
+}
+
+.close-btn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.cart-content {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.cart-img {
+  position: relative;
+  width: 110px;
+  height: 93px;
+  padding-left: 15px;
+
+}
+
+.cart-describe {
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+
+.remove-cart-item {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.remove-cart-item:hover {
+  color: red;
+}
+
+.cart-arrow {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.control-cart-item {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  right: 0;
+  padding: 5px;
+}
+
+.control-cart-item>p {
+  position: relative;
+  margin: 0;
+  left: 4px;
+}
+
+
+.cart-total-box {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+  background-color: #dcddde;
+  width: 100%;
+  height: 90px;
+}
+
+.category>p,
+.metals>p {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
