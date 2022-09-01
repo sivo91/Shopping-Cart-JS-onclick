@@ -12,21 +12,22 @@
   const metals = document.querySelector('.metals')
   const priceInput = document.querySelector('.form-range')
   const priceValue = document.querySelector('.range-value')
+  const detailBox = document.querySelector('.detail')
+  const detailCloseBtn = document.querySelector('.detail-close')
+  const detailIcon = document.querySelector('.detail-icon')
 
 
   let cart = JSON.parse(localStorage.getItem("CART")) || []
   updateCart()
   let products = []
   
-
+  // starter :]
   const init = async(e) => {
   const res = await fetch('./data.json')
   const data = await res.json()
   products.push(...data)
   
   displayProducts(products)
-  
-
   e.preventDefault()
 }
 
@@ -40,7 +41,8 @@
         <div class="card">
         <img src="${imgs}" alt="img">
         <div class="icons">
-          <i class="bi bi-search icon-product"></i> 
+          <i class="bi bi-search icon-product detail-icon"
+          onclick="detailOfProduct(${id})"></i> 
           <i class="bi bi-cart2 icon-product product-basket"  onclick="addToCart(${id})"></i>
         </div>
         <div class="card-body">
@@ -251,11 +253,8 @@ metals.addEventListener('click', e => {
 
 })
 
-  
+// SEARCH PRICE INPUT
 function searchPrice(){
-
-
-
   let maxPrice = products.map(item => item.price)
   //console.log(maxPrice)
   maxPrice = Math.max(...maxPrice)
@@ -286,10 +285,30 @@ function searchPrice(){
 
 searchPrice()
 
+// OPEN DETAIL IMAGE
+function detailOfProduct(id){
+  console.log(id)
+
+  let image = products.find(item => item.id === id)
+  console.log(image)
+  
+  if(id === image.id) {
+    detailBox.innerHTML = `
+      <i class="bi bi-x-octagon-fill detail-close" onclick="closeDetailImg()"></i>
+      <img src="${image.imgs}" alt="img">
+    `
+    detailBox.style.display = 'block'
+    
+  }
+}
+
+// CLOSE DETAIL IMG
+function closeDetailImg() {
+    detailBox.style.display = 'none'
+}
 
 
 window.addEventListener('DOMContentLoaded', init)
-
 
 
 

@@ -1,6 +1,8 @@
 
 
-
+main {
+  position: relative;
+}
 
 .cart-icon {
   font-size: 25px;
@@ -26,14 +28,16 @@ section {
   position: relative;
   display: flex;
   height: 100vh;
-  margin-bottom: 600px;
-
+  width: 100%;
+ 
 }
+
+
 
 aside {
   position: fixed;
-  margin-top: 60px;
   width: 20%;
+  margin-top: 60px;
 }
 
 .product-title{
@@ -50,7 +54,7 @@ aside {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 8px;
+  padding: 30px;
   gap: 15px;
 }
 
@@ -216,9 +220,30 @@ aside>p {
 }
 
 
+.detail {
+  position: absolute;
+  z-index: 2;
+  width: 600px;
+  left: 33%;
+  top: 10px;
+  display: none;
+}
 
+.detail > img {
+  position: relative;
+  width: 100%;
+  border: .3px solid black;
+}
 
+.detail-close {
+  position: relative;
+  margin:  20px;
+  font-size: 25px;
+  cursor: pointer;
+  top: 50px;
+  z-index: 6;
 
+}
 
 
 

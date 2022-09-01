@@ -31,7 +31,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a class="navbar-brand" href="app.html">Navbar</a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,11 +41,10 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link" href="index.html">Products</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link">Contact</a>
+              <a class="nav-link" href="singleProduct.html">single Prod</a>
             </li>
           </ul>
 
@@ -60,27 +59,28 @@
 
   <main>
     <!--  sidebar -->
-    <div class="sidebar">
+   
+      <div class="sidebar">
 
-      <div class="sidebar-title px-5 py-2">
-        <i class="bi bi-x-octagon close-btn"></i>
-        <h4 class="text-center pt-1">Shopping Cart</h4>
+        <div class="sidebar-title px-5 py-2">
+          <i class="bi bi-x-octagon close-btn"></i>
+          <h4 class="text-center pt-1">Shopping Cart</h4>
+        </div>
+
+        <!--  cart-items -->
+        <div class="cart-content">
+
+
+
+        </div>
+
+        <!-- cart total -->
+        <div class="cart-total-box">
+          <h6 class="text-center">Total: <span class="cart-total">0</span></h6>
+          <button type="button" class="btn btn-danger btn-sm clear-cart vstack mx-auto">CLEAR CART</button>
+        </div>
       </div>
-
-      <!--  cart-items -->
-      <div class="cart-content">
-
-
-
-      </div>
-
-      <!-- cart total -->
-      <div class="cart-total-box">
-        <h6 class="text-center">Total: <span class="cart-total">0</span></h6>
-        <button type="button" class="btn btn-danger btn-sm clear-cart vstack mx-auto">CLEAR CART</button>
-      </div>
-    </div>
-
+ 
 
 
    
@@ -92,7 +92,7 @@
         <input type="text" class="input" placeholder="search...">
         <h5 class="mt-4">Products</h5>
         <div class="category">
-          <p class="all">All</p>
+          <p class="all text-danger">All</p>
           <p class="rings">Rings</p>
           <p class="neckaces">Necklaces</p>
           <p class="earrings">Earrings</p>
@@ -108,23 +108,23 @@
         <div class="range-box mt-4">
           <h4>Price</h4>
           <input type="range" class="form-range" id="customRange1">
-          <div class="value"><span class="range-value"></span></div>
+          <div class="value"><span class="range-value">Value: $50</span></div>
         </div>
 
 
       </aside>
 
       <!-- products -->
-      <div class="productBox">
-       
-        <div class="products">
-
-        </div>
-      </div>
-
+        <div class="products"> </div>
+  
     </section>
-
+    <div class="detail">
+      <i class="bi bi-x-octagon-fill detail-close"></i>
+      <img src="./imgs/earrings.jpg" alt="img">
+    </div>
   </main>
+
+<!-- Modal -->
 
 
 
