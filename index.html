@@ -31,7 +31,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        
+        <h5 class="me-5">Shopping</h5>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,15 +43,10 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Products</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="singleProduct.html">single Prod</a>
-            </li>
+            
           </ul>
 
-          <div class="cart-icon-box">
-            <i class="bi bi-cart4 cart-icon"></i>
-            <span class="cart-icon-item">0</span>
-          </div>
+         
         </div>
       </div>
     </nav>
@@ -59,7 +54,12 @@
 
   <main>
     <!--  sidebar -->
+    <div class="cart-icon-box">
+      <i class="bi bi-cart4 cart-icon"></i>
+      <span class="cart-icon-item">0</span>
+    </div>
    
+ <!--    cart  -->
       <div class="sidebar">
 
         <div class="sidebar-title px-5 py-2">
@@ -68,11 +68,7 @@
         </div>
 
         <!--  cart-items -->
-        <div class="cart-content">
-
-
-
-        </div>
+        <div class="cart-content"></div>
 
         <!-- cart total -->
         <div class="cart-total-box">
@@ -85,39 +81,43 @@
 
    
 
-    <section>
-      <!-- side -->
-      <aside class="px-5 ms-5">
+    <section class="row mt-5">
 
-        <input type="text" class="input" placeholder="search...">
-        <h5 class="mt-4">Products</h5>
-        <div class="category">
-          <p class="all text-danger">All</p>
-          <p class="rings">Rings</p>
-          <p class="neckaces">Necklaces</p>
-          <p class="earrings">Earrings</p>
-        </div>
+      <!-- filter -->
+      <div class="col-8 col-md-3  ms-5 filter">
+        <aside>
 
-        <h5>Metals</h5>
-        <div class="metals">
-          <p class="gold">Gold</p>
-          <p class="silver">Silver</p>
-        </div>
+          <input type="text" class="input" placeholder="search...">
+          <h5 class="mt-4">Products</h5>
+          <div class="category">
+            <p class="all text-danger">All</p>
+            <p class="rings">Rings</p>
+            <p class="neckaces">Necklaces</p>
+            <p class="earrings">Earrings</p>
+          </div>
 
-
-        <div class="range-box mt-4">
-          <h4>Price</h4>
-          <input type="range" class="form-range" id="customRange1">
-          <div class="value"><span class="range-value">Value: $50</span></div>
-        </div>
+          <h5>Metals</h5>
+          <div class="metals">
+            <p class="gold">Gold</p>
+            <p class="silver">Silver</p>
+          </div>
 
 
-      </aside>
+          <div class="range-box mt-4">
+            <h4>Price</h4>
+            <input type="range" class="form-range" id="customRange1">
+            <div class="value"><span class="range-value">Value: $50</span></div>
+          </div>
 
+
+        </aside>
+     </div>
       <!-- products -->
-        <div class="products"> </div>
+        <div class="products col-12 col-md-7 "> </div>
   
     </section>
+
+    <!--  klik na lupu , otvori modal window -->
     <div class="detail">
       <i class="bi bi-x-octagon-fill detail-close"></i>
       <img src="./imgs/earrings.jpg" alt="img">

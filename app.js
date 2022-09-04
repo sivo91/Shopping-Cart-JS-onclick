@@ -63,7 +63,7 @@ function priceFormat(price){
 function addToCart(id){
   
   if(cart.some(item => item.id === id)) {
-    alert('product already in cart!')
+    alert('the product is in the cart!')
   } else {
     openCart()
     const item = products.find( product => product.id === id)
@@ -71,9 +71,10 @@ function addToCart(id){
       ...item,
       amount:1
     })
+
     console.log(cart)
   }
-  
+
   updateCart()
 }
 
@@ -123,6 +124,7 @@ function addProductToCart() {
       </div>
     `
    })
+
 }
 
 
@@ -135,6 +137,7 @@ function changeAmountOfProduct(action, id) {
       if(item.id === id) {
         if(action === "minus" && currentAmount > 1){
           currentAmount--
+          
         } else if (action === 'plus' && currentAmount < item.instock) {
           currentAmount++
         }
@@ -152,6 +155,7 @@ function changeAmountOfProduct(action, id) {
 //REMOVE PRODUCT FROM CART
 function removeItem (id){
  cart = cart.filter((item) => item.id !== id)
+
  updateCart()
 }
 
