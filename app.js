@@ -91,6 +91,7 @@ function updateCart() {
 }
 
 function subtotal(){
+  navbarBasket.innerHTML = 0
  let totalPrice = 0,
      totalItems = 0
 
@@ -100,6 +101,8 @@ function subtotal(){
       cartTotal.innerHTML = `$${totalPrice.toFixed(2) / 100}`
       navbarBasket.innerHTML = `${totalItems}`
      })
+
+    
 }
 
 // ADD PRODUCT TO CART
@@ -154,8 +157,10 @@ function changeAmountOfProduct(action, id) {
 
 //REMOVE PRODUCT FROM CART
 function removeItem (id){
- cart = cart.filter((item) => item.id !== id)
+ cartTotal.innerHTML = 0
 
+ cart = cart.filter((item) => item.id !== id)
+ 
  updateCart()
 }
 
@@ -172,12 +177,12 @@ navBasket.addEventListener('click', () => {
 
 // CLEAR CART TOTAL BTN
   clearTotal.addEventListener('click', () => {
-     if(cart.length > 0) {
+    
       cartTotal.innerHTML = 0
       cartContent.innerHTML = ''
       navbarBasket.innerHTML = 0
       cart = []
-     }
+    
      updateCart()
 })
 
